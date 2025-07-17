@@ -1,0 +1,2059 @@
+<!DOCTYPE html>
+<html 
+    lang="en" 
+    class="group/html min-h-screen has-inline-code-block
+         dark 
+         
+        
+        
+        
+         has-gray-scale-Slate 
+    "
+    data-prismjs-copy="Copy" 
+    data-prismjs-copy-error="Error" 
+    data-prismjs-copy-success="Copied">
+    
+<!-- Mirrored from iptvtools.io/xuidocs/add-bouquet-category-and-live/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Jul 2025 21:24:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="UTF-8">
+        <meta name="HandheldFriendly" content="True" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Bouquet, Category, Live Channel</title>
+
+        <link rel="preload" as="style" href="../../assets/built/main.mina0ac.css?v=11ef435d92" />
+        <link rel="preload" as="script" href="../../assets/built/main.mina0ac.js?v=11ef435d92" />  
+
+        <script type="7232d53fadb2f971adc91628-text/javascript">
+    // Namespace
+    window.Spiritix = window.Spiritix || {};
+
+    // Translations
+    window.Spiritix.t = {
+        "Toggle menu": 'Toggle menu'
+    };
+
+    // Color functions
+    window.Spiritix.hexToRgb = (hex) => {
+        hex = hex.replace('#', '');
+        hex = hex.length === 3 ? hex.split().map(c => c + c).join() : hex;
+
+        return [
+            parseInt(hex.substring(0,2), 16),
+            parseInt(hex.substring(2,4), 16),
+            parseInt(hex.substring(4,6), 16),
+        ];
+    };
+
+    window.Spiritix.getContrastColor = (hex) => {
+        const [r, g, b] = window.Spiritix.hexToRgb(hex);
+
+        const yiq = ((r*299) + (g*587) + (b*114)) / 1000;
+
+        return (yiq >= 128) ? '#000' : '#fff';  
+    };
+</script>
+
+<script type="7232d53fadb2f971adc91628-text/javascript">
+    if (localStorage && localStorage.theme) {
+        document.documentElement.classList.toggle('dark', localStorage.theme === 'dark');
+    } else if ("Dark" === "System") {
+        document.documentElement.classList.toggle('dark', window.matchMedia('(prefers-color-scheme: dark)').matches);
+    }
+</script>
+
+
+    <script type="7232d53fadb2f971adc91628-text/javascript">
+        (function() {
+            const hex = "#610760".trim();
+            const [r, g, b] = window.Spiritix.hexToRgb(hex);
+            const contrastColor = window.Spiritix.getContrastColor(hex);
+
+            document.documentElement.style.setProperty('--ghost-accent-color-light-rgb', `${r} ${g} ${b}`);
+            document.documentElement.style.setProperty('--color-contrast-light', contrastColor);
+
+            window.Spiritix.ghostAccentColorLightRgb = `${r} ${g} ${b}`;
+        })();
+    </script>    
+    <style>
+        :root {
+            --color-contrast: var(--color-contrast-light);
+            --ghost-accent-color-rgb: var(--ghost-accent-color-light-rgb);
+        }
+    </style>  
+
+        <script type="7232d53fadb2f971adc91628-text/javascript">
+            (function() {
+                const hexDark = "#970988".trim();
+                const [r, g, b] = window.Spiritix.hexToRgb(hexDark);
+                const contrastColor = window.Spiritix.getContrastColor(hexDark);
+
+                document.documentElement.style.setProperty('--ghost-accent-color-dark-rgb', `${r} ${g} ${b}`);
+                document.documentElement.style.setProperty('--color-contrast-dark', contrastColor);
+
+                window.Spiritix.ghostAccentColorDarkRgb = `${r} ${g} ${b}`;
+            })();
+        </script>    
+
+        <style>
+            :root.dark {
+                --color-contrast: var(--color-contrast-dark);
+                --ghost-accent-color-rgb: var(--ghost-accent-color-dark-rgb);
+                --ghost-accent-color: #970988;
+            }
+        </style>               
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        <link href="../../assets/built/main.mina0ac.css?v=11ef435d92" rel="stylesheet" type="text/css" />
+
+        <script src="../../assets/built/main.mina0ac.js?v=11ef435d92" defer data-manual type="7232d53fadb2f971adc91628-text/javascript"></script>  
+
+        <link rel="preload" href="../../content/images/2025/04/IPTVTools-logo.png" as="image" fetchpriority="high" />
+                   
+           
+        
+
+        <meta name="description" content="Step-by-step guide to add bouquets, categories, and live streams in XUI One. Learn how to organize your IPTV content efficiently XUI.one Crack.">
+    <link rel="icon" href="../../content/images/size/w256h256/2025/04/favicon.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="IPTVTools">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Add Bouquet, Category, Live Channel">
+    <meta property="og:description" content="Step-by-step guide to add bouquets, categories, and live streams in XUI One. Learn how to organize your IPTV content efficiently XUI.one Crack.">
+    <meta property="og:url" content="https://iptvtools.io/xuidocs/add-bouquet-category-and-live/">
+    <meta property="og:image" content="https://static.ghost.org/v5.0.0/images/publication-cover.jpg">
+    <meta property="article:published_time" content="2025-05-16T05:38:10.000Z">
+    <meta property="article:modified_time" content="2025-07-12T08:09:49.000Z">
+    <meta property="article:tag" content="xui.one-docs">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Add Bouquet, Category, Live Channel">
+    <meta name="twitter:description" content="Step-by-step guide to add bouquets, categories, and live streams in XUI One. Learn how to organize your IPTV content efficiently XUI.one Crack.">
+    <meta name="twitter:url" content="https://iptvtools.io/xuidocs/add-bouquet-category-and-live/">
+    <meta name="twitter:image" content="https://static.ghost.org/v5.0.0/images/publication-cover.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="IPTVTools">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="xui.one-docs">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="840">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "IPTVTools",
+        "url": "https://iptvtools.io/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://iptvtools.io/content/images/2025/04/IPTVTools-logo.PNG"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "IPTVTools",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://iptvtools.io/content/images/2025/05/penguin.png",
+            "width": 100,
+            "height": 100
+        },
+        "url": "https://iptvtools.io/author/iptvtools/",
+        "sameAs": [
+            "https://iptvtools.io"
+        ]
+    },
+    "headline": "Add Bouquet, Category, Live Channel",
+    "url": "https://iptvtools.io/xuidocs/add-bouquet-category-and-live/",
+    "datePublished": "2025-05-16T05:38:10.000Z",
+    "dateModified": "2025-07-12T08:09:49.000Z",
+    "keywords": "xui.one-docs",
+    "description": "📺 How to Add Your First Bouquet, Category, and Live Stream in XUI.ONE\n\nSetting up your IPTV panel with XUI.ONE involves creating bouquets (channel packages), categories (channel groupings), and adding live streams. This step-by-step guide will help you configure your panel efficiently.\n\n\n🌐 Step 1: Access the XUI.ONE Admin Panel\n\n 1. Open your web browser.\n 2. Navigate to your XUI.ONE admin panel using the URL provided during installation (e.g., &#x60;http://your-server-ip:your-access-code).\n 3. Log",
+    "mainEntityOfPage": "https://iptvtools.io/xuidocs/add-bouquet-category-and-live/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.123">
+    <link rel="alternate" type="application/rss+xml" title="IPTVTools" href="#">
+    <script defer src="../../../iptvtools.b-cdn.net/portal/portal.min.js" data-i18n="true" data-ghost="https://iptvtools.io/" data-key="3c6faac9376feabb1d1d18033b" data-api="https://iptvtools.io/ghost/api/content/" data-locale="en" crossorigin="anonymous" type="7232d53fadb2f971adc91628-text/javascript"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style><script async src="https://js.stripe.com/v3/" type="7232d53fadb2f971adc91628-text/javascript"></script>
+    <script defer src="../../../cdn.jsdelivr.net/ghost/sodo-search%40_1.5/umd/sodo-search.min.js" data-key="3c6faac9376feabb1d1d18033b" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/main.css" data-sodo-search="https://iptvtools.io/" data-locale="en" crossorigin="anonymous" type="7232d53fadb2f971adc91628-text/javascript"></script>
+    
+    <link href="https://iptvtools.io/webmentions/receive/" rel="webmention">
+    <script defer src="../../public/cards.mina0ac.js?v=11ef435d92" type="7232d53fadb2f971adc91628-text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../../public/cards.mina0ac.css?v=11ef435d92">
+    <script defer src="../../public/member-attribution.mina0ac.js?v=11ef435d92" type="7232d53fadb2f971adc91628-text/javascript"></script><style>:root {--ghost-accent-color: #610760;}</style>
+    <script type="7232d53fadb2f971adc91628-text/javascript">
+  function isInsideCodeBlock(element) {
+    return element.closest('pre') || element.closest('code') || element.closest('.code-block');
+  }
+
+  document.addEventListener('contextmenu', function (e) {
+    // nu mai blocăm click-dreapta deloc
+    // dacă vrei să blochezi doar în anumite zone, poți adăuga aici logica
+  });
+
+  document.addEventListener('copy', function (e) {
+    if (!isInsideCodeBlock(e.target)) e.preventDefault();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (
+      (e.ctrlKey || e.metaKey) &&
+      ['c', 'x', 's', 'u'].includes(e.key.toLowerCase()) &&
+      !isInsideCodeBlock(e.target)
+    ) {
+      e.preventDefault();
+    }
+  });
+
+  document.addEventListener('selectstart', function (e) {
+    if (!isInsideCodeBlock(e.target)) e.preventDefault();
+  });
+</script>
+
+    <link rel="preconnect" href="https://fonts.bunny.net/"><link rel="stylesheet" href="https://fonts.bunny.net/css?family=fira-sans:400,500,600"><style>:root {--gh-font-heading: Fira Sans;--gh-font-body: Fira Sans;}</style>
+    </head>
+    <body class="post-template tag-hash-docs tag-hash-xuidocs tag-xui-one-docs gh-font-heading-fira-sans gh-font-body-fira-sans  min-h-screen flex flex-col antialiased overflow-x-hidden text-gray-900 bg-white dark:text-gray-400 dark:bg-gray-900 [&.has-modal]:h-screen [&.has-modal]:overflow-hidden">
+        
+        <div class="absolute right-0 top-0 -z-10 overflow-hidden">
+            <div class="relative w-[600px] h-[600px] -translate-y-2/3 translate-x-2/3 lg:-translate-y-1/2 lg:translate-x-1/2 bg-gradient-to-bl from-accent to-transparent rounded-full blur-[100px] opacity-50"></div>
+        </div>
+
+        <div id="viewport" class="min-h-screen flex flex-col">
+            <a href="#main" class="group sr-only focus:not-sr-only focus-within:not-sr-only outline-none">
+                <span class="relative flex items-center justify-center w-full h-12 font-semibold bg-gray-900 text-gray-50 text-sm group-focus-within:ring group-focus:ring ring-1 ring-inset ring-accent dark:bg-gray-800/60">
+                    Skip to main content
+                </span>
+            </a>       
+
+            <header 
+    data-header
+    class="group sticky z-50 top-0 min-h-20 lg:h-20 flex flex-wrap flex-none items-center backdrop-blur border-b border-gray-900/5 transition-colors duration-300 [&.stuck]:bg-white/90
+        dark:border-gray-50/5 dark:bg-transparent dark:[&.stuck]:bg-gray-900/70
+         has-breadcrumbs  
+        "    
+>
+    <nav class="outer xl:outer-xl flex items-center w-full py-4 group-[.has-breadcrumbs]:lg:min-h-0 group-[.has-breadcrumbs]:min-h-20">
+        <div class="inner flex items-center min-h-10">
+            <a data-brand 
+                class="flex-shrink mr-8 font-bold text-lg text-gray-900 dark:text-gray-50  has-logo lg:min-w-logo " 
+                href="https://iptvtools.io/" 
+                aria-label="IPTVTools">
+                        <img class="max-h-9 w-auto" src="../../content/images/2025/04/IPTVTools-logo.png" alt="IPTVTools"/>
+            </a>
+
+                <ul data-navigation-desktop class="navigation hidden lg:flex space-x-2 text-gray-700 dark:text-gray-200" role="list">
+             
+                <li data-slug="latest-tutorials" 
+                    class="relative inline-flex 
+                        max-3xl:[&:nth-child(n+6)]:hidden
+                            [&:nth-child(n+8)]:hidden
+                    "
+                >
+                     
+                        <a href="https://iptvtools.io/blog-grid/" class="[&.external>svg]:inline px-3 py-1.5 inline-flex items-center font-semibold text-sm leading-6 whitespace-nowrap rounded-lg hover:bg-gray-100 [&.current]:bg-gray-100 [&.current-parent]:bg-gray-100 dark:hover:bg-gray-700 dark:[&.current]:bg-gray-700 dark:[&.current-parent]:bg-gray-700    ">                            
+                            ✨ Latest Tutorials
+
+                            <svg
+     class="hidden flex-shrink-0 w-4 h-4 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>
+                            <script type="7232d53fadb2f971adc91628-text/javascript">
+                                (function() {
+                                    var link = document.currentScript.parentElement;
+                            
+                                    if (link.protocol !== "javascript:" && link.hostname !== location.hostname) {
+                                        link.classList.add('external');
+                                        link.target = "_blank";
+                                    }                            
+                                })();
+                            </script>
+                        </a>                    
+                </li>
+             
+                <li data-slug="iptv-docs" 
+                    class="relative inline-flex 
+                        max-3xl:[&:nth-child(n+6)]:hidden
+                            [&:nth-child(n+8)]:hidden
+                    "
+                >
+                     
+                        <a href="https://iptvtools.io/iptv-docs/" class="[&.external>svg]:inline px-3 py-1.5 inline-flex items-center font-semibold text-sm leading-6 whitespace-nowrap rounded-lg hover:bg-gray-100 [&.current]:bg-gray-100 [&.current-parent]:bg-gray-100 dark:hover:bg-gray-700 dark:[&.current]:bg-gray-700 dark:[&.current-parent]:bg-gray-700    ">                            
+                            📚 IPTV Docs
+
+                            <svg
+     class="hidden flex-shrink-0 w-4 h-4 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>
+                            <script type="7232d53fadb2f971adc91628-text/javascript">
+                                (function() {
+                                    var link = document.currentScript.parentElement;
+                            
+                                    if (link.protocol !== "javascript:" && link.hostname !== location.hostname) {
+                                        link.classList.add('external');
+                                        link.target = "_blank";
+                                    }                            
+                                })();
+                            </script>
+                        </a>                    
+                </li>
+             
+                <li data-slug="apps" 
+                    class="relative inline-flex 
+                        max-3xl:[&:nth-child(n+6)]:hidden
+                            [&:nth-child(n+8)]:hidden
+                    "
+                >
+                     
+                        <a href="https://iptvtools.io/apps-iptv-docs/" class="[&.external>svg]:inline px-3 py-1.5 inline-flex items-center font-semibold text-sm leading-6 whitespace-nowrap rounded-lg hover:bg-gray-100 [&.current]:bg-gray-100 [&.current-parent]:bg-gray-100 dark:hover:bg-gray-700 dark:[&.current]:bg-gray-700 dark:[&.current-parent]:bg-gray-700    ">                            
+                            🧩 APPS
+
+                            <svg
+     class="hidden flex-shrink-0 w-4 h-4 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>
+                            <script type="7232d53fadb2f971adc91628-text/javascript">
+                                (function() {
+                                    var link = document.currentScript.parentElement;
+                            
+                                    if (link.protocol !== "javascript:" && link.hostname !== location.hostname) {
+                                        link.classList.add('external');
+                                        link.target = "_blank";
+                                    }                            
+                                })();
+                            </script>
+                        </a>                    
+                </li>
+             
+                <li data-slug="drm-tools" 
+                    class="relative inline-flex 
+                        max-3xl:[&:nth-child(n+6)]:hidden
+                            [&:nth-child(n+8)]:hidden
+                    "
+                >
+                     
+                        <a href="https://iptvtools.io/drm-scripts-tools/" class="[&.external>svg]:inline px-3 py-1.5 inline-flex items-center font-semibold text-sm leading-6 whitespace-nowrap rounded-lg hover:bg-gray-100 [&.current]:bg-gray-100 [&.current-parent]:bg-gray-100 dark:hover:bg-gray-700 dark:[&.current]:bg-gray-700 dark:[&.current-parent]:bg-gray-700    ">                            
+                            🔐 DRM Tools
+
+                            <svg
+     class="hidden flex-shrink-0 w-4 h-4 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>
+                            <script type="7232d53fadb2f971adc91628-text/javascript">
+                                (function() {
+                                    var link = document.currentScript.parentElement;
+                            
+                                    if (link.protocol !== "javascript:" && link.hostname !== location.hostname) {
+                                        link.classList.add('external');
+                                        link.target = "_blank";
+                                    }                            
+                                })();
+                            </script>
+                        </a>                    
+                </li>
+             
+                <li data-slug="roadmap" 
+                    class="relative inline-flex 
+                        max-3xl:[&:nth-child(n+6)]:hidden
+                            [&:nth-child(n+8)]:hidden
+                    "
+                >
+                     
+                        <a href="https://iptvtools.io/roadmap/" class="[&.external>svg]:inline px-3 py-1.5 inline-flex items-center font-semibold text-sm leading-6 whitespace-nowrap rounded-lg hover:bg-gray-100 [&.current]:bg-gray-100 [&.current-parent]:bg-gray-100 dark:hover:bg-gray-700 dark:[&.current]:bg-gray-700 dark:[&.current-parent]:bg-gray-700    ">                            
+                            🗺️ Roadmap
+
+                            <svg
+     class="hidden flex-shrink-0 w-4 h-4 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>
+                            <script type="7232d53fadb2f971adc91628-text/javascript">
+                                (function() {
+                                    var link = document.currentScript.parentElement;
+                            
+                                    if (link.protocol !== "javascript:" && link.hostname !== location.hostname) {
+                                        link.classList.add('external');
+                                        link.target = "_blank";
+                                    }                            
+                                })();
+                            </script>
+                        </a>                    
+                </li>
+
+        <li class="inline-flex relative 
+                    max-3xl:[&:nth-child(-n+6)]:hidden
+                        3xl:[&:nth-child(-n+8)]:hidden
+                "
+        >
+            <button data-dropdown-toggle aria-label="Toggle menu" class="peer px-1.5 py-1.5 rounded-lg hover:bg-gray-100 [&.open]:bg-gray-100 dark:hover:bg-gray-700 dark:[&.open]:bg-gray-700">
+                <svg 
+   class="relative w-6 h-6" 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 24 24" 
+  width="24" 
+  height="24" 
+  fill="none" 
+  stroke="currentColor" 
+  stroke-width="1.5" 
+  focusable="false"
+  aria-hidden="true"     
+>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+</svg>
+            </button>     
+
+            <ul data-dropdown class="hidden peer-[.open]:block absolute top-16 -left-1/2 max-xl:-right-1/2 max-xl:left-auto w-64 max-h-[calc(100vh-theme(spacing.24))] py-2 px-3 space-y-1 bg-white ring-1 ring-gray-900/5 shadow-sm rounded-md overflow-y-auto dark:bg-gray-800 dark:ring-white/5 dark:ring-inset" role="list">
+                     
+                        <li data-slug="latest-tutorials" 
+                            class="hidden
+                                max-3xl:[&:nth-child(n+6)]:block
+                                    [&:nth-child(n+8)]:block
+                            "
+                        >
+                             
+                                <a href="https://iptvtools.io/blog-grid/" class="[&.external>svg]:inline relative flex items-center px-3 py-1.5 font-semibold text-sm leading-6 rounded-lg hover:bg-gray-100 [&.current]:bg-gray-100 [&.current-parent]:bg-gray-100 dark:hover:bg-gray-700 dark:[&.current]:bg-gray-700 dark:[&.current-parent]:bg-gray-700   ">                                    
+                                    ✨ Latest Tutorials
+
+                                    <svg
+     class="hidden flex-shrink-0 w-4 h-4 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>                                </a>
+                        </li>
+                     
+                        <li data-slug="iptv-docs" 
+                            class="hidden
+                                max-3xl:[&:nth-child(n+6)]:block
+                                    [&:nth-child(n+8)]:block
+                            "
+                        >
+                             
+                                <a href="https://iptvtools.io/iptv-docs/" class="[&.external>svg]:inline relative flex items-center px-3 py-1.5 font-semibold text-sm leading-6 rounded-lg hover:bg-gray-100 [&.current]:bg-gray-100 [&.current-parent]:bg-gray-100 dark:hover:bg-gray-700 dark:[&.current]:bg-gray-700 dark:[&.current-parent]:bg-gray-700   ">                                    
+                                    📚 IPTV Docs
+
+                                    <svg
+     class="hidden flex-shrink-0 w-4 h-4 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>                                </a>
+                        </li>
+                     
+                        <li data-slug="apps" 
+                            class="hidden
+                                max-3xl:[&:nth-child(n+6)]:block
+                                    [&:nth-child(n+8)]:block
+                            "
+                        >
+                             
+                                <a href="https://iptvtools.io/apps-iptv-docs/" class="[&.external>svg]:inline relative flex items-center px-3 py-1.5 font-semibold text-sm leading-6 rounded-lg hover:bg-gray-100 [&.current]:bg-gray-100 [&.current-parent]:bg-gray-100 dark:hover:bg-gray-700 dark:[&.current]:bg-gray-700 dark:[&.current-parent]:bg-gray-700   ">                                    
+                                    🧩 APPS
+
+                                    <svg
+     class="hidden flex-shrink-0 w-4 h-4 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>                                </a>
+                        </li>
+                     
+                        <li data-slug="drm-tools" 
+                            class="hidden
+                                max-3xl:[&:nth-child(n+6)]:block
+                                    [&:nth-child(n+8)]:block
+                            "
+                        >
+                             
+                                <a href="https://iptvtools.io/drm-scripts-tools/" class="[&.external>svg]:inline relative flex items-center px-3 py-1.5 font-semibold text-sm leading-6 rounded-lg hover:bg-gray-100 [&.current]:bg-gray-100 [&.current-parent]:bg-gray-100 dark:hover:bg-gray-700 dark:[&.current]:bg-gray-700 dark:[&.current-parent]:bg-gray-700   ">                                    
+                                    🔐 DRM Tools
+
+                                    <svg
+     class="hidden flex-shrink-0 w-4 h-4 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>                                </a>
+                        </li>
+                     
+                        <li data-slug="roadmap" 
+                            class="hidden
+                                max-3xl:[&:nth-child(n+6)]:block
+                                    [&:nth-child(n+8)]:block
+                            "
+                        >
+                             
+                                <a href="https://iptvtools.io/roadmap/" class="[&.external>svg]:inline relative flex items-center px-3 py-1.5 font-semibold text-sm leading-6 rounded-lg hover:bg-gray-100 [&.current]:bg-gray-100 [&.current-parent]:bg-gray-100 dark:hover:bg-gray-700 dark:[&.current]:bg-gray-700 dark:[&.current-parent]:bg-gray-700   ">                                    
+                                    🗺️ Roadmap
+
+                                    <svg
+     class="hidden flex-shrink-0 w-4 h-4 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>                                </a>
+                        </li>
+            </ul>
+        </li>
+    </ul>
+
+
+            <div data-header-buttons class="hidden lg:flex items-center mx-5 pl-5 space-x-1 border-l text-gray-400 border-gray-900/10 dark:border-gray-50/10  max-4xl:[&_:nth-child(n_+_6)]:hidden ">
+                <button data-theme-toggle class="h-9 w-9 flex items-center justify-center flex-shrink-0 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-gray-300" title="Change theme" aria-label="Change theme">
+                    <svg 
+   class="dark:hidden w-6 h-6" 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 24 24" 
+  width="24" 
+  height="24" 
+  fill="none" 
+  stroke="currentColor"
+  stroke-width="2" 
+  focusable="false"
+  aria-hidden="true"      
+>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+</svg>
+                    <svg 
+   class="hidden dark:inline w-6 h-6 relative -top-px"  
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 24 24" 
+  width="24" 
+  height="24"     
+  fill="none" 
+  stroke="currentColor" 
+  stroke-width="2"
+  stroke-linecap="round" 
+  stroke-linejoin="round"
+  focusable="false"
+  aria-hidden="true"        
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+  <path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2"></path>
+</svg>                </button>
+
+                
+
+                <a data-social-link class="[&amp;:nth-child(n_+_7)]:hidden h-9 w-9 flex items-center justify-center flex-shrink-0 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="https://github.com/IPTVTools-io" title="Github" aria-label="Github" target="_blank">
+                    <svg 
+     class="w-5 h-5" 
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24" 
+    fill="currentColor"
+    focusable="false"
+    aria-hidden="true"     
+>
+    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+</svg>                </a>
+                <a data-social-link class="[&amp;:nth-child(n_+_7)]:hidden h-9 w-9 flex items-center justify-center flex-shrink-0 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="https://t.me/iptvtoolsio" title="Telegram" aria-label="Telegram" target="_blank">
+                    <svg 
+     class="w-5 h-5" 
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"
+    fill="currentColor" 
+    focusable="false"
+    aria-hidden="true"      
+>
+    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+</svg>                </a>
+            </div>
+
+            <button data-ghost-search class="hidden lg:max-xl:flex ml-auto h-9 w-9 items-center justify-center flex-shrink-0 rounded-lg text-gray-500 dark:text-gray-400 bg-white/30 dark:bg-transparent hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-gray-300" title="Quick search..." aria-label="Quick search...">
+                <svg 
+     class="w-5 h-5" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24" 
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    stroke-linejoin="round" 
+    focusable="false"
+    aria-hidden="true"       
+>
+    <circle cx="11" cy="11" r="8"></circle>
+    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+</svg>            </button>        
+            <button data-ghost-search class="flex-shrink hidden xl:flex items-center h-9 w-56 min-w-0 px-4 ml-auto overflow-hidden ring-1 ring-gray-900/10 rounded-md text-gray-600/[0.82] text-sm bg-white/95 hover:bg-gray-50/90 hover:ring-gray-900/20 dark:text-gray-400/90 dark:bg-gray-800 dark:hover:bg-gray-700 dark:ring-inset dark:ring-gray-50/10">
+                <svg 
+     class="flex-none w-5 h-5 text-gray-400 dark:text-gray-500" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24" 
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    stroke-linejoin="round" 
+    focusable="false"
+    aria-hidden="true"       
+>
+    <circle cx="11" cy="11" r="8"></circle>
+    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+</svg>                <span class="mx-2 truncate">Quick search...</span>
+                <span class="ml-auto">⌘K</span>
+            </button>
+
+            <div class="flex lg:hidden items-center ml-auto -mr-1.5 space-x-2 text-gray-400">
+                <button data-theme-toggle class="w-8 h-8 flex items-center justify-center" title="Change theme" aria-label="Change theme">
+                    <svg 
+   class="dark:hidden w-6 h-6 hover:text-gray-700 dark:hover:text-gray-100" 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 24 24" 
+  width="24" 
+  height="24" 
+  fill="none" 
+  stroke="currentColor"
+  stroke-width="2" 
+  focusable="false"
+  aria-hidden="true"      
+>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+</svg>
+                    <svg 
+   class="hidden dark:inline w-5 h-5 hover:text-gray-700 dark:hover:text-gray-100 relative -top-px"  
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 24 24" 
+  width="24" 
+  height="24"     
+  fill="none" 
+  stroke="currentColor" 
+  stroke-width="2"
+  stroke-linecap="round" 
+  stroke-linejoin="round"
+  focusable="false"
+  aria-hidden="true"        
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+  <path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2"></path>
+</svg>                </button>
+                <button data-ghost-search class="w-8 h-8 flex items-center justify-center" title="Quick search..." aria-label="Quick search...">
+                    <svg 
+     class="w-5 h-5 hover:text-gray-700 dark:hover:text-gray-100" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24" 
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    stroke-linejoin="round" 
+    focusable="false"
+    aria-hidden="true"       
+>
+    <circle cx="11" cy="11" r="8"></circle>
+    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+</svg>                </button>
+                <button data-mobile-menu-toggle class="w-8 h-8 flex items-center justify-center" title="Toggle menu" aria-label="Toggle menu">
+                    <svg 
+   class="w-5 h-5 hover:text-gray-700 dark:hover:text-gray-100" 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 24 24" 
+  width="24" 
+  height="24" 
+  fill="none" 
+  stroke="currentColor"
+  stroke-width="2" 
+  focusable="false"
+  aria-hidden="true"     
+>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+</svg>
+                </button>
+            </div>        
+        </div>
+    </nav>
+
+    <div data-breadcrumbs class="outer xl:outer-xl hidden group-[.has-breadcrumbs]:lg:hidden group-[.has-breadcrumbs]:flex items-center w-full h-10 text-2xs border-t border-gray-900/5 dark:border-gray-50/5 ">
+        <div class="inner flex items-center overflow-hidden">
+            <button data-breadcrumbs-button class="flex-none flex items-center justify-center h-8 w-8 -ml-1.5 mr-1.5" aria-label="Toggle menu">
+                <svg 
+   class="flex-none h-5 w-5 text-gray-400 hover:text-gray-700 dark:hover:text-gray-100" 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 24 24" 
+  width="24" 
+  height="24" 
+  fill="none" 
+  stroke="currentColor"
+  stroke-width="2" 
+  focusable="false"
+  aria-hidden="true"     
+>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+</svg>
+            </button>
+
+            <span data-breadcrumbs-section class="hidden flex-none truncate text-gray-500 dark:text-gray-400">
+                <span data-breadcrumbs-section-text></span>
+                <span class="mx-2">/</span>
+            </span>
+            <span data-breadcrumbs-current class="hidden truncate font-semibold text-gray-900 dark:text-gray-200"></span>
+        </div>
+    </div>    
+</header>
+
+<nav data-mobile-menu class="group invisible flex lg:hidden fixed inset-0 -z-10 [&.open]:visible [&.open]:z-50 ">
+    <div data-mobile-menu-close class="fixed inset-0 bg-black/20 backdrop-blur-sm"></div>
+
+    <div class="fixed top-0 right-0 bottom-0 w-full max-w-xs bg-white shadow-lg font-semibold text-gray-900 transition ease-out translate-x-full group-[.open]:translate-x-0 dark:bg-gray-800 dark:text-gray-200">
+        <div class="relative pl-9 pr-16 pb-6 pt-14 h-full overflow-y-scroll overflow-x-hidden">
+            <button data-mobile-menu-close aria-label="Close" class="fixed flex items-center justify-center top-4 right-3 p-2 text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
+                <svg 
+   class="h-5 w-5" 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 24 24" 
+  width="24" 
+  height="24" 
+  fill="none" 
+  stroke="currentColor"
+  stroke-width="2" 
+  focusable="false"
+  aria-hidden="true"     
+>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+</svg>
+            </button>
+
+            <div class="flex flex-col min-h-full">
+                    <ul data-navigation-mobile class="navigation space-y-2 -mx-3">
+             
+                <li data-slug="latest-tutorials">
+                     
+                        <a href="https://iptvtools.io/blog-grid/" class="[&.external>svg]:inline px-3 py-1.5 w-full flex items-center font-semibold text-sm leading-6 rounded-lg hover:bg-gray-100 [&.current]:bg-gray-100 [&.current-parent]:bg-gray-100 dark:hover:bg-gray-700 dark:[&.current]:bg-gray-700 dark:[&.current-parent]:bg-gray-700   ">
+                            ✨ Latest Tutorials
+
+                            <svg
+     class="hidden flex-shrink-0 w-4 h-4 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>                        </a>                    
+                </li>
+             
+                <li data-slug="iptv-docs">
+                     
+                        <a href="https://iptvtools.io/iptv-docs/" class="[&.external>svg]:inline px-3 py-1.5 w-full flex items-center font-semibold text-sm leading-6 rounded-lg hover:bg-gray-100 [&.current]:bg-gray-100 [&.current-parent]:bg-gray-100 dark:hover:bg-gray-700 dark:[&.current]:bg-gray-700 dark:[&.current-parent]:bg-gray-700   ">
+                            📚 IPTV Docs
+
+                            <svg
+     class="hidden flex-shrink-0 w-4 h-4 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>                        </a>                    
+                </li>
+             
+                <li data-slug="apps">
+                     
+                        <a href="https://iptvtools.io/apps-iptv-docs/" class="[&.external>svg]:inline px-3 py-1.5 w-full flex items-center font-semibold text-sm leading-6 rounded-lg hover:bg-gray-100 [&.current]:bg-gray-100 [&.current-parent]:bg-gray-100 dark:hover:bg-gray-700 dark:[&.current]:bg-gray-700 dark:[&.current-parent]:bg-gray-700   ">
+                            🧩 APPS
+
+                            <svg
+     class="hidden flex-shrink-0 w-4 h-4 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>                        </a>                    
+                </li>
+             
+                <li data-slug="drm-tools">
+                     
+                        <a href="https://iptvtools.io/drm-scripts-tools/" class="[&.external>svg]:inline px-3 py-1.5 w-full flex items-center font-semibold text-sm leading-6 rounded-lg hover:bg-gray-100 [&.current]:bg-gray-100 [&.current-parent]:bg-gray-100 dark:hover:bg-gray-700 dark:[&.current]:bg-gray-700 dark:[&.current-parent]:bg-gray-700   ">
+                            🔐 DRM Tools
+
+                            <svg
+     class="hidden flex-shrink-0 w-4 h-4 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>                        </a>                    
+                </li>
+             
+                <li data-slug="roadmap">
+                     
+                        <a href="https://iptvtools.io/roadmap/" class="[&.external>svg]:inline px-3 py-1.5 w-full flex items-center font-semibold text-sm leading-6 rounded-lg hover:bg-gray-100 [&.current]:bg-gray-100 [&.current-parent]:bg-gray-100 dark:hover:bg-gray-700 dark:[&.current]:bg-gray-700 dark:[&.current-parent]:bg-gray-700   ">
+                            🗺️ Roadmap
+
+                            <svg
+     class="hidden flex-shrink-0 w-4 h-4 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>                        </a>                    
+                </li>
+    </ul>
+
+
+                <div class="mt-6 pt-4 border-t border-gray-900/10 dark:border-gray-50/5">
+                    <div class="flex flex-wrap -ml-2 text-gray-400">
+                        
+
+                <a data-social-link class="mr-2 h-9 w-9 flex items-center justify-center flex-shrink-0 rounded-lg hover:text-gray-700 dark:hover:text-gray-200" href="https://github.com/IPTVTools-io" title="Github" aria-label="Github" target="_blank">
+                    <svg 
+     class="w-5 h-5" 
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24" 
+    fill="currentColor"
+    focusable="false"
+    aria-hidden="true"     
+>
+    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+</svg>                </a>
+                <a data-social-link class="mr-2 h-9 w-9 flex items-center justify-center flex-shrink-0 rounded-lg hover:text-gray-700 dark:hover:text-gray-200" href="https://t.me/iptvtoolsio" title="Telegram" aria-label="Telegram" target="_blank">
+                    <svg 
+     class="w-5 h-5" 
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"
+    fill="currentColor" 
+    focusable="false"
+    aria-hidden="true"      
+>
+    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+</svg>                </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+            <main id="main" tabindex="-1" class="flex-none outline-none">
+                
+        
+
+
+            <div class="outer xl:outer-xl">
+    <div class="inner">
+        <div class="group flex relative     ">
+            <div 
+                class="hidden lg:block absolute top-0 left-0 h-full w-screen -translate-x-full 
+                    group-[.has-sidebar-transparent]/html:hidden">
+                <div class="sticky top-20 w-full h-[calc(100vh_-_theme(spacing.20))] bg-gray-50 dark:bg-gray-800 group-[.has-sidebar-dark]/html:bg-gray-900 group-[.has-sidebar-dark]/html:dark:bg-gray-950"></div>
+            </div>
+
+            <div 
+                data-docs-menu 
+                class="group fixed -left-full invisible lg:visible lg:h-[calc(100vh_-_theme(spacing.20))] lg:sticky lg:left-0 lg:top-20 flex-none overflow-hidden
+                [&.open]:max-lg:visible [&.open]:max-lg:z-50 [&.open]:max-lg:inset-0 ">
+
+                <div data-docs-menu-close class="hidden group-[.open]:max-lg:block fixed -z-10 inset-0 bg-black/20 backdrop-blur-sm"></div>   
+
+                    <div class="docs-menu h-full w-full max-w-xs lg:w-72 px-10 lg:pl-0 py-16 relative z-10 bg-gray-50 dark:bg-gray-800 overflow-x-hidden overflow-y-auto 
+                        max-lg:pl-8 max-lg:pr-12 max-lg:-translate-x-full group-[.open]:max-lg:translate-x-0 group-[.open]:max-lg:shadow-lg group-[.open]:max-lg:transition group-[.open]:max-lg:ease-out
+                        group-[.has-sidebar-transparent]/html:lg:bg-transparent group-[.has-sidebar-transparent]/html:lg:dark:bg-transparent group-[.has-sidebar-transparent]/html:lg:border-r group-[.has-sidebar-transparent]/html:lg:border-gray-900/5 group-[.has-sidebar-transparent]/html:lg:dark:border-gray-50/5
+                        group-[.has-sidebar-dark]/html:bg-gray-900 group-[.has-sidebar-dark.dark]/html:bg-gray-950
+                        ">
+                        <div class="sticky top-0 h-0 w-full z-10">
+                            <button data-docs-menu-close aria-label="Close"  class="-translate-y-12 translate-x-full hidden group-[.open]:max-lg:flex items-center justify-center p-2 ml-auto rounded-md text-gray-400 hover:text-gray-700 dark:hover:text-gray-100 bg-gray-50 dark:bg-gray-800 group-[.has-sidebar-dark]/html:bg-gray-900 group-[.has-sidebar-dark.dark]/html:bg-gray-950">
+                                <svg 
+   class="h-5 w-5" 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 24 24" 
+  width="24" 
+  height="24" 
+  fill="none" 
+  stroke="currentColor"
+  stroke-width="2" 
+  focusable="false"
+  aria-hidden="true"     
+>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+</svg>
+                            </button>    
+                        </div>
+                        <ul role="list" class="text-sm space-y-8 group-[.no-sections]:space-y-0">
+                            <li data-docs-section>
+                                <ul class="space-y-4 border-l-2 border-gray-900/10 dark:border-gray-50/10" role="list">
+                                    <li class="relative">
+                                        <a href="https://iptvtools.io/iptv-docs/" data-title="IPTV Documentation" class="group relative flex ">
+                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                            </span>
+                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                IPTV Documentation
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                                <li data-docs-section class="group/ds ">
+                                    <h3 data-docs-section-heading class="group/dh relative w-full font-semibold dark:text-gray-50 group-[.no-sections]:hidden  ">
+                                            xui.one-docs
+
+                                        <button class=" hidden  absolute top-0 right-0 w-5 h-5 rounded flex-shrink-0 items-center justify-center translate-x-full group-hover/dh:bg-gray-900/5 dark:group-hover/dh:bg-gray-50/10" aria-label="Toggle menu">
+                                            <svg
+     class="w-3.5 h-3.5 text-gray-500 dark:text-gray-400 group-[.open]/ds:rotate-90" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    focusable="false"
+    aria-hidden="true"    
+>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+</svg>                                        </button>
+                                    </h3>
+                                            <ul class="group-[.open]/ds:block  mt-5 space-y-4 border-l-2 border-gray-900/10 dark:border-gray-50/10 group-[.no-sections]:pt-4 group-[.no-sections]:mt-0" role="list">
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/xui-one-1-5-13-install-guide/" class="group relative flex scroll-m-10" 
+                                                            data-section="xui.one-docs" 
+                                                            data-slug="xui-one-1-5-13-install-guide"
+                                                            data-title="XUI.one 1.5.13 Install Guide"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                XUI.one 1.5.13 Install Guide
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/first-setup/" class="group relative flex scroll-m-10" 
+                                                            data-section="xui.one-docs" 
+                                                            data-slug="first-setup"
+                                                            data-title="First Setup Guide"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                First Setup Guide
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/xui-one-terminal-commands/" class="group relative flex scroll-m-10" 
+                                                            data-section="xui.one-docs" 
+                                                            data-slug="xui-one-terminal-commands"
+                                                            data-title="XUI.ONE Terminal Commands"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                XUI.ONE Terminal Commands
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/admin-api-hmac-2/" class="group relative flex scroll-m-10" 
+                                                            data-section="xui.one-docs" 
+                                                            data-slug="admin-api-hmac-2"
+                                                            data-title="Admin API &amp; HMAC"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                Admin API &amp; HMAC
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="index.html" class="group relative flex scroll-m-10 current" 
+                                                            data-section="xui.one-docs" 
+                                                            data-slug="add-bouquet-category-and-live"
+                                                            data-title="Add Bouquet, Category, Live Channel"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                Add Bouquet, Category, Live Channel
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/fix-xui-one-backup/" class="group relative flex scroll-m-10" 
+                                                            data-section="xui.one-docs" 
+                                                            data-slug="fix-xui-one-backup"
+                                                            data-title="Fix XUI.one Backup"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                Fix XUI.one Backup
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                            </ul>
+                                </li>
+                                <li data-docs-section class="group/ds ">
+                                    <h3 data-docs-section-heading class="group/dh relative w-full font-semibold dark:text-gray-50 group-[.no-sections]:hidden  ">
+                                            MidnightStreamer Docs &amp; API
+
+                                        <button class=" hidden  absolute top-0 right-0 w-5 h-5 rounded flex-shrink-0 items-center justify-center translate-x-full group-hover/dh:bg-gray-900/5 dark:group-hover/dh:bg-gray-50/10" aria-label="Toggle menu">
+                                            <svg
+     class="w-3.5 h-3.5 text-gray-500 dark:text-gray-400 group-[.open]/ds:rotate-90" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    focusable="false"
+    aria-hidden="true"    
+>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+</svg>                                        </button>
+                                    </h3>
+                                            <ul class="group-[.open]/ds:block  mt-5 space-y-4 border-l-2 border-gray-900/10 dark:border-gray-50/10 group-[.no-sections]:pt-4 group-[.no-sections]:mt-0" role="list">
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/midnightstreamer-pro-offline-installation/" class="group relative flex scroll-m-10" 
+                                                            data-section="MidnightStreamer Docs &amp; API" 
+                                                            data-slug="midnightstreamer-pro-offline-installation"
+                                                            data-title="MidnightStreamer Pro v5.2.8 Offline – Installation"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                MidnightStreamer Pro v5.2.8 Offline – Installation
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/server-api-lines/" class="group relative flex scroll-m-10" 
+                                                            data-section="MidnightStreamer Docs &amp; API" 
+                                                            data-slug="server-api-lines"
+                                                            data-title="Server API Lines"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                Server API Lines
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/server-api-mags/" class="group relative flex scroll-m-10" 
+                                                            data-section="MidnightStreamer Docs &amp; API" 
+                                                            data-slug="server-api-mags"
+                                                            data-title="Server API MAGS"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                Server API MAGS
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/server-api-administrators/" class="group relative flex scroll-m-10" 
+                                                            data-section="MidnightStreamer Docs &amp; API" 
+                                                            data-slug="server-api-administrators"
+                                                            data-title="Server API  Administrators"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                Server API  Administrators
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/server-api-resellers/" class="group relative flex scroll-m-10" 
+                                                            data-section="MidnightStreamer Docs &amp; API" 
+                                                            data-slug="server-api-resellers"
+                                                            data-title="Server API Resellers"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                Server API Resellers
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/server-api-streams/" class="group relative flex scroll-m-10" 
+                                                            data-section="MidnightStreamer Docs &amp; API" 
+                                                            data-slug="server-api-streams"
+                                                            data-title="Server API Streams"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                Server API Streams
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/midnightstreamer-pro-nulled-license-system-what-you-should-know/" class="group relative flex scroll-m-10" 
+                                                            data-section="MidnightStreamer Docs &amp; API" 
+                                                            data-slug="midnightstreamer-pro-nulled-license-system-what-you-should-know"
+                                                            data-title="MidnightStreamer License System"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                MidnightStreamer License System
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                            </ul>
+                                </li>
+                                <li data-docs-section class="group/ds ">
+                                    <h3 data-docs-section-heading class="group/dh relative w-full font-semibold dark:text-gray-50 group-[.no-sections]:hidden  ">
+                                            o11 OTT Streamer Docs &amp; Scripts
+
+                                        <button class=" hidden  absolute top-0 right-0 w-5 h-5 rounded flex-shrink-0 items-center justify-center translate-x-full group-hover/dh:bg-gray-900/5 dark:group-hover/dh:bg-gray-50/10" aria-label="Toggle menu">
+                                            <svg
+     class="w-3.5 h-3.5 text-gray-500 dark:text-gray-400 group-[.open]/ds:rotate-90" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    focusable="false"
+    aria-hidden="true"    
+>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+</svg>                                        </button>
+                                    </h3>
+                                            <ul class="group-[.open]/ds:block  mt-5 space-y-4 border-l-2 border-gray-900/10 dark:border-gray-50/10 group-[.no-sections]:pt-4 group-[.no-sections]:mt-0" role="list">
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/o11-v4-ott-streamer-install/" class="group relative flex scroll-m-10" 
+                                                            data-section="o11 OTT Streamer Docs &amp; Scripts" 
+                                                            data-slug="o11-v4-ott-streamer-install"
+                                                            data-title="O11 v4 OTT Streamer Install"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                O11 v4 OTT Streamer Install
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/optimizing-o11-v4-ott-streamer/" class="group relative flex scroll-m-10" 
+                                                            data-section="o11 OTT Streamer Docs &amp; Scripts" 
+                                                            data-slug="optimizing-o11-v4-ott-streamer"
+                                                            data-title="Optimizing O11 v4 OTT Streamer"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                Optimizing O11 v4 OTT Streamer
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/full-command-line-options/" class="group relative flex scroll-m-10" 
+                                                            data-section="o11 OTT Streamer Docs &amp; Scripts" 
+                                                            data-slug="full-command-line-options"
+                                                            data-title="Full Command-Line Options"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                Full Command-Line Options
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/o11v4-web-interface-guide/" class="group relative flex scroll-m-10" 
+                                                            data-section="o11 OTT Streamer Docs &amp; Scripts" 
+                                                            data-slug="o11v4-web-interface-guide"
+                                                            data-title="O11v4 Web Interface Guide"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                O11v4 Web Interface Guide
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                            </ul>
+                                </li>
+                                <li data-docs-section class="group/ds ">
+                                    <h3 data-docs-section-heading class="group/dh relative w-full font-semibold dark:text-gray-50 group-[.no-sections]:hidden  ">
+                                            Xaccel-Codec-Nulled
+
+                                        <button class=" hidden  absolute top-0 right-0 w-5 h-5 rounded flex-shrink-0 items-center justify-center translate-x-full group-hover/dh:bg-gray-900/5 dark:group-hover/dh:bg-gray-50/10" aria-label="Toggle menu">
+                                            <svg
+     class="w-3.5 h-3.5 text-gray-500 dark:text-gray-400 group-[.open]/ds:rotate-90" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    focusable="false"
+    aria-hidden="true"    
+>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+</svg>                                        </button>
+                                    </h3>
+                                            <ul class="group-[.open]/ds:block  mt-5 space-y-4 border-l-2 border-gray-900/10 dark:border-gray-50/10 group-[.no-sections]:pt-4 group-[.no-sections]:mt-0" role="list">
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/xaccel-codec-v4-3-19-offline/" class="group relative flex scroll-m-10" 
+                                                            data-section="Xaccel-Codec-Nulled" 
+                                                            data-slug="xaccel-codec-v4-3-19-offline"
+                                                            data-title="Xaccel-Codec v4.3.19 Offline"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                Xaccel-Codec v4.3.19 Offline
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/enable-drm-decryption/" class="group relative flex scroll-m-10" 
+                                                            data-section="Xaccel-Codec-Nulled" 
+                                                            data-slug="enable-drm-decryption"
+                                                            data-title="Enable DRM Decryption"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                Enable DRM Decryption
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                            </ul>
+                                </li>
+                                <li data-docs-section class="group/ds ">
+                                    <h3 data-docs-section-heading class="group/dh relative w-full font-semibold dark:text-gray-50 group-[.no-sections]:hidden  ">
+                                            Astra Cesbo Nulled
+
+                                        <button class=" hidden  absolute top-0 right-0 w-5 h-5 rounded flex-shrink-0 items-center justify-center translate-x-full group-hover/dh:bg-gray-900/5 dark:group-hover/dh:bg-gray-50/10" aria-label="Toggle menu">
+                                            <svg
+     class="w-3.5 h-3.5 text-gray-500 dark:text-gray-400 group-[.open]/ds:rotate-90" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    focusable="false"
+    aria-hidden="true"    
+>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+</svg>                                        </button>
+                                    </h3>
+                                            <ul class="group-[.open]/ds:block  mt-5 space-y-4 border-l-2 border-gray-900/10 dark:border-gray-50/10 group-[.no-sections]:pt-4 group-[.no-sections]:mt-0" role="list">
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/install-astra-official-latest/" class="group relative flex scroll-m-10" 
+                                                            data-section="Astra Cesbo Nulled" 
+                                                            data-slug="install-astra-official-latest"
+                                                            data-title="Install Astra Official Latest"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                Install Astra Official Latest
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                            </ul>
+                                </li>
+                                <li data-docs-section class="group/ds ">
+                                    <h3 data-docs-section-heading class="group/dh relative w-full font-semibold dark:text-gray-50 group-[.no-sections]:hidden  ">
+                                            Flussonic Media Server
+
+                                        <button class=" hidden  absolute top-0 right-0 w-5 h-5 rounded flex-shrink-0 items-center justify-center translate-x-full group-hover/dh:bg-gray-900/5 dark:group-hover/dh:bg-gray-50/10" aria-label="Toggle menu">
+                                            <svg
+     class="w-3.5 h-3.5 text-gray-500 dark:text-gray-400 group-[.open]/ds:rotate-90" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    focusable="false"
+    aria-hidden="true"    
+>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+</svg>                                        </button>
+                                    </h3>
+                                            <ul class="group-[.open]/ds:block  mt-5 space-y-4 border-l-2 border-gray-900/10 dark:border-gray-50/10 group-[.no-sections]:pt-4 group-[.no-sections]:mt-0" role="list">
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/flussonic-24-03-install-offline/" class="group relative flex scroll-m-10" 
+                                                            data-section="Flussonic Media Server" 
+                                                            data-slug="flussonic-24-03-install-offline"
+                                                            data-title="Flussonic 24.03 Install Offline"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                Flussonic 24.03 Install Offline
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/flussonic-load-balancer-cluster/" class="group relative flex scroll-m-10" 
+                                                            data-section="Flussonic Media Server" 
+                                                            data-slug="flussonic-load-balancer-cluster"
+                                                            data-title="Flussonic Load Balancer / Cluster"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                Flussonic Load Balancer / Cluster
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="https://iptvtools.io/xuidocs/flussonic-token-auth-secure/" class="group relative flex scroll-m-10" 
+                                                            data-section="Flussonic Media Server" 
+                                                            data-slug="flussonic-token-auth-secure"
+                                                            data-title="Flussonic Token Auth – Secure"
+                                                        >
+                                                            <span class="h-5 flex-none mr-3 group-[.current]:mr-2 flex items-center">
+                                                                <span class="flex-none w-4 h-0.5 group-[.current]:w-2 bg-gray-900/10 dark:bg-gray-50/10"></span>
+                                                                <span class="hidden group-[.current]:flex relative flex-none items-center justify-center w-3 h-3 rounded-full overflow-hidden before:block before:opacity-20 before:bg-accent before:absolute before:inset-0 after:block after:bg-accent after:w-1.5 after:h-1.5 after:rounded-full"></span>
+                                                            </span>
+                                                            <span class="leading-5 text-gray-500 hover:text-gray-600 group-[.current]:font-semibold group-[.current]:text-accent dark:text-gray-400 dark:hover:text-gray-300 group-[.current]:dark:hover:text-accent">
+                                                                Flussonic Token Auth – Secure
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                            </ul>
+                                </li>
+                        </ul>
+                    </div>
+            </div>
+
+            <div class="relative flex flex-col flex-auto min-w-0 py-16">
+                <div class="grid grid-cols-1 xl:grid-cols-[auto_theme(spacing.56)]">
+                    <div data-toc-src class="flex-auto min-w-0 px-0 lg:pl-8 xl:px-16">
+                        <h2 id="___TOCBOT___" class="sr-only m-0">
+                            <span aria-hidden="true">Add Bouquet, Category, Live Channel</span>
+                        </h2>
+
+                        <article class="overflow-x-hidden max-w-3xl mx-auto">
+                            <header>
+                                        <span class="block text-sm font-medium text-accent mt-0 mb-1 group-[.no-sections]:hidden">
+                                                xui.one-docs
+                                        </span>
+
+                                <h1 class="text-4xl leading-tight tracking-tight font-extrabold text-gray-900 dark:text-gray-50 js-toc-ignore">
+                                    Add Bouquet, Category, Live Channel
+                                </h1>
+
+
+                            </header>
+
+                            <div class="mt-8 content 4xl:content-lg">
+                                <figure class="kg-card kg-image-card"><img src="../../content/images/2025/05/add-categories-xui.one-and-bouquets.png" class="kg-image" alt="" loading="lazy" width="1492" height="579" srcset="https://iptvtools.io/content/images/size/w600/2025/05/add-categories-xui.one-and-bouquets.png 600w, https://iptvtools.io/content/images/size/w1000/2025/05/add-categories-xui.one-and-bouquets.png 1000w, https://iptvtools.io/content/images/2025/05/add-categories-xui.one-and-bouquets.png 1492w" sizes="(min-width: 720px) 720px"></figure><h1 id="%F0%9F%93%BA-how-to-add-your-first-bouquet-category-and-live-stream-in-xuione">📺 How to Add Your First Bouquet, Category, and Live Stream in XUI.ONE</h1><p>Setting up your IPTV panel with XUI.ONE involves creating bouquets (channel packages), categories (channel groupings), and adding live streams. This step-by-step guide will help you configure your panel efficiently.</p><h2 id="%F0%9F%8C%90-step-1-access-the-xuione-admin-panel">🌐 Step 1: Access the XUI.ONE Admin Panel</h2><ol><li>Open your web browser.</li><li>Navigate to your XUI.ONE admin panel using the URL provided during installation (e.g., `<strong>http://your-server-ip:your-access-code</strong>).</li><li>Log in with your admin credentials.</li></ol><figure class="kg-card kg-image-card"><img src="../../content/images/2025/05/Dashboard.png" class="kg-image" alt="" loading="lazy" width="1722" height="1018" srcset="https://iptvtools.io/content/images/size/w600/2025/05/Dashboard.png 600w, https://iptvtools.io/content/images/size/w1000/2025/05/Dashboard.png 1000w, https://iptvtools.io/content/images/size/w1600/2025/05/Dashboard.png 1600w, https://iptvtools.io/content/images/2025/05/Dashboard.png 1722w" sizes="(min-width: 720px) 720px"></figure><h2 id="%F0%9F%93%A6-step-2-create-a-bouquet">📦 Step 2: Create a Bouquet</h2><p>Bouquets are collections of channels or streams that you can assign to users or packages.</p><ol><li>In the admin panel, go to <strong>Bouquets</strong> &gt; <strong>Create Bouquet</strong>.</li><li>Enter a <strong>Name</strong> for your bouquet (e.g., "Premium Package").</li><li>Optionally, add a <strong>Description</strong>.</li><li>Click <strong>Save</strong> to create the bouquet.</li></ol><figure class="kg-card kg-image-card kg-card-hascaption"><img src="../../content/images/2025/05/Add-Bouquets-XUI.png" class="kg-image" alt="" loading="lazy" width="1097" height="520" srcset="https://iptvtools.io/content/images/size/w600/2025/05/Add-Bouquets-XUI.png 600w, https://iptvtools.io/content/images/size/w1000/2025/05/Add-Bouquets-XUI.png 1000w, https://iptvtools.io/content/images/2025/05/Add-Bouquets-XUI.png 1097w" sizes="(min-width: 720px) 720px"><figcaption><span style="white-space: pre-wrap;">Create a Bouquet XUI.one</span></figcaption></figure><h2 id="%F0%9F%97%82%EF%B8%8F-step-3-create-a-category">🗂️ Step 3: Create a Category</h2><p>Categories help organize your streams into logical groupings like Sports, News, or Movies.</p><ol><li>Navigate to <strong>Management</strong> &gt; <strong>Service Setup</strong> &gt; <strong>Categories</strong>.</li><li></li><li><strong>Add Category</strong> Enter a <strong>Name</strong> for the category (e.g., "Sports").</li><li>Click <strong>Add</strong> to add the category.</li></ol><figure class="kg-card kg-image-card kg-card-hascaption"><img src="../../content/images/2025/05/add-categories-xui.one.png" class="kg-image" alt="" loading="lazy" width="1245" height="659" srcset="https://iptvtools.io/content/images/size/w600/2025/05/add-categories-xui.one.png 600w, https://iptvtools.io/content/images/size/w1000/2025/05/add-categories-xui.one.png 1000w, https://iptvtools.io/content/images/2025/05/add-categories-xui.one.png 1245w" sizes="(min-width: 720px) 720px"><figcaption><span style="white-space: pre-wrap;">Create a Category XUI.one</span></figcaption></figure><h2 id="%F0%9F%94%B4-step-4-add-a-live-stream">🔴 Step 4: Add a Live Stream</h2><p>Now, let's add a live stream and assign it to the category and bouquet you just created.</p><ol><li>Go to <strong>Contents </strong>==&gt; <strong>Streams</strong> &gt; <strong>Add Stream</strong>.</li><li>Fill in the following details:<ul><li><strong>Stream Name</strong>: e.g., "ESPN HD"</li><li><strong>Stream URL</strong>: e.g., <code>http://example.com/stream/espnhd.m3u8</code></li><li><strong>Category</strong>: Select the category you created earlier (e.g., "Sports").</li><li><strong>Bouquets</strong>: Select the bouquet(s) to include this stream in (e.g., "Premium Package").</li></ul></li><li>Configure additional settings as needed (e.g., EPG ID, Logo URL).</li><li>Click <strong>Save</strong> to add the stream.</li></ol><figure class="kg-card kg-image-card kg-card-hascaption"><img src="../../content/images/2025/05/add-stream.png" class="kg-image" alt="" loading="lazy" width="1331" height="878" srcset="https://iptvtools.io/content/images/size/w600/2025/05/add-stream.png 600w, https://iptvtools.io/content/images/size/w1000/2025/05/add-stream.png 1000w, https://iptvtools.io/content/images/2025/05/add-stream.png 1331w" sizes="(min-width: 720px) 720px"><figcaption><span style="white-space: pre-wrap;">Add a Live Stream XUI.one</span></figcaption></figure><h2 id="%E2%9C%85-step-5-verify-the-stream">✅ Step 5: Verify the Stream</h2><p>After adding the stream:</p><ol><li>Navigate to <strong>Content </strong>==&gt; <strong>Streams</strong> &gt; <strong>Manage Streams</strong>.</li><li>Locate the stream you just added.</li><li>Click on the <strong>Play</strong> icon to test the stream.</li><li>Ensure the stream plays correctly.</li></ol><figure class="kg-card kg-image-card kg-card-hascaption"><img src="../../content/images/2025/05/stream-start.png" class="kg-image" alt="" loading="lazy" width="1267" height="330" srcset="https://iptvtools.io/content/images/size/w600/2025/05/stream-start.png 600w, https://iptvtools.io/content/images/size/w1000/2025/05/stream-start.png 1000w, https://iptvtools.io/content/images/2025/05/stream-start.png 1267w" sizes="(min-width: 720px) 720px"><figcaption><span style="white-space: pre-wrap;">Manage Streams</span></figcaption></figure><h2 id="%F0%9F%A7%A9-additional-tips">🧩 Additional Tips</h2><ul><li><strong>EPG Integration</strong>: To provide Electronic Program Guide data, ensure your streams have correct EPG IDs and that you've configured EPG sources under <strong>EPG</strong> settings.</li><li><strong>Logos</strong>: Enhance user experience by adding logo URLs to your streams.</li><li><strong>Transcoding</strong>: If needed, set up transcoding profiles under <strong>Transcoding Profiles</strong> to adjust stream quality.</li></ul><hr><p>By following these steps, you've successfully added your first bouquet, category, and live stream to your XUI.ONE panel. This setup allows for organized content delivery and a better user experience.</p>
+                            </div>
+
+                            <div class="mt-16 flex flex-col lg:flex-row max-lg:space-y-4 lg:space-x-4">
+                                <a href="#" class="docs-prev invisible flex basis-1/2 items-center p-4 border border-gray-900/10 rounded-md no-underline hover:bg-gray-50 dark:border-gray-50/10 dark:hover:bg-gray-800">
+                                    <svg
+     class="w-5 h-5 mr-4 flex-none text-gray-500 dark:text-gray-400" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    focusable="false"
+    aria-hidden="true"    
+>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+</svg>
+                                    <div class="flex flex-col w-full text-right">
+                                        <span class="text-2xs font-normal text-gray-500 dark:text-gray-400">
+                                            Previous
+                                            <span class="docs-prev-section group-[.no-sections]:hidden"></span>
+                                        </span>
+                                        <span class="docs-prev-title text-sm font-semibold text-gray-700 dark:text-gray-300"></span>
+                                    </div>
+                                </a>
+                                <a href="#" class="docs-next invisible flex basis-1/2 items-center p-4 border border-gray-900/10 rounded-md no-underline hover:bg-gray-50 dark:border-gray-50/10 dark:hover:bg-gray-800">
+                                    <div class="flex flex-col w-full">
+                                        <span class="text-2xs font-normal text-gray-500 dark:text-gray-400">
+                                            Next
+                                            <span class="docs-next-section group-[.no-sections]:hidden"></span>
+                                        </span>
+                                        <span class="docs-next-title text-sm font-semibold text-gray-700 dark:text-gray-300"></span>
+                                    </div>
+
+                                    <svg
+     class="w-5 h-5 ml-4 flex-none text-gray-500 dark:text-gray-400" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    focusable="false"
+    aria-hidden="true"    
+>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+</svg>                                </a>
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <div data-toc-container class="invisible hidden xl:block sticky top-[theme(spacing.36)] flex-none w-56 max-h-[calc(100vh-theme(spacing.48))]">
+                        <h2 class="text-2xs uppercase font-bold tracking-wider mb-3 dark:text-gray-200">
+                            On this page
+                        </h2>
+                        <nav data-toc-target class="relative text-xs leading-4 overflow-auto max-h-[calc(100vh-theme(spacing.48))] text-gray-500 dark:text-gray-400 [&_.current]:dark:text-gray-300">
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </main>
+
+            <footer data-footer class=" no-space-top  group flex-none mt-auto text-sm text-gray-500 dark:text-gray-400 [&.no-space-top]:mt-0">
+    <div class="outer xl:outer-xl mt-24 pb-28 border-t border-gray-900/10 dark:border-gray-50/5 group-[.no-space-top]:mt-0">
+        <div class="inner">
+            <div class="flex flex-col lg:flex-row lg:items-center py-10">
+                <div>
+                    <a data-brand class="flex-none inline-flex font-bold text-lg text-gray-900 dark:text-gray-50" href="https://iptvtools.io/" aria-label="IPTVTools">
+                                <img class="max-h-9 w-auto" src="../../content/images/2025/04/IPTVTools-logo.png" alt="IPTVTools" loading="lazy" />
+                    </a>
+                        <div class="mt-2 text-base max-w-md">
+                            Your complete source for IPTV software, tools, OTT apps, and streaming solutions.
+                        </div>
+                </div>
+
+                    <div data-membership class="flex-none lg:max-w-sm lg:ml-auto mt-10 lg:mt-0 pt-10 lg:pt-0 border-t border-gray-900/5 dark:border-gray-50/5 lg:border-none">
+                        <div class="">
+                            <h2 class="font-bold text-base text-gray-900 dark:text-gray-200">
+                                Subscribe to our newsletter
+                            </h2>
+                            <p class="mt-0.5 text-sm text-gray-500 dark:text-gray-400">
+                                Get the latest posts and updates delivered to your inbox. <br> No spam. Unsubscribe anytime.
+                            </p>
+                        </div>
+                        <button data-portal="signup" class="flex items-center h-9 px-4 mt-4 w-full max-w-md lg:min-w-80 ring-1 ring-gray-900/10 rounded-md text-gray-500 text-sm bg-white/90 hover:bg-gray-50/90 hover:ring-gray-900/20 dark:text-gray-400/90 dark:bg-gray-800 dark:hover:bg-gray-700 dark:ring-inset dark:ring-gray-50/10">
+                            <span aria-hidden="true">Enter your email</span>
+                            <span class="ml-auto font-bold text-gray-900 dark:text-gray-200">
+                                Subscribe
+                            </span>
+                        </button>
+                    </div>
+            </div>
+
+            <div class="pt-10 border-t border-gray-900/5 dark:border-gray-50/5">
+                    <ul data-navigation-footer class="navigation flex flex-wrap text-sm text-gray-500 dark:text-gray-400" role="list">
+            <li data-slug="portal" class="mr-8 mb-3">
+                <a href="#/portal/signup" class="[&.external>svg]:inline inline-flex items-center hover:opacity-80">
+                    🔐 Portal
+
+                    <svg
+     class="relative top-px hidden flex-shrink-0 w-3.5 h-3.5 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>                </a>
+            </li>
+            <li data-slug="privacy-policy" class="mr-8 mb-3">
+                <a href="https://iptvtools.io/" class="[&.external>svg]:inline inline-flex items-center hover:opacity-80">
+                    🔏 Privacy Policy
+
+                    <svg
+     class="relative top-px hidden flex-shrink-0 w-3.5 h-3.5 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>                </a>
+            </li>
+            <li data-slug="write-for-us" class="mr-8 mb-3">
+                <a href="https://iptvtools.io/" class="[&.external>svg]:inline inline-flex items-center hover:opacity-80">
+                    ✍️ Write for Us
+
+                    <svg
+     class="relative top-px hidden flex-shrink-0 w-3.5 h-3.5 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>                </a>
+            </li>
+            <li data-slug="terms-of-use" class="mr-8 mb-3">
+                <a href="https://iptvtools.io/" class="[&.external>svg]:inline inline-flex items-center hover:opacity-80">
+                    📜 Terms of Use
+
+                    <svg
+     class="relative top-px hidden flex-shrink-0 w-3.5 h-3.5 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>                </a>
+            </li>
+            <li data-slug="changelog" class="mr-8 mb-3">
+                <a href="https://iptvtools.io/changelog/" class="[&.external>svg]:inline inline-flex items-center hover:opacity-80">
+                    📝 Changelog
+
+                    <svg
+     class="relative top-px hidden flex-shrink-0 w-3.5 h-3.5 ml-1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"    
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2"
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    focusable="false"
+    aria-hidden="true"      
+>
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M17 7l-10 10"></path>
+   <path d="M8 7l9 0l0 9"></path>
+</svg>                </a>
+            </li>
+    </ul>
+
+            </div>
+
+            <div class="flex flex-col-reverse lg:flex-row lg:items-center mt-6 lg:mt-3">
+<div class="text-xs flex flex-wrap items-center gap-1">
+    <a href="https://iptvtools.io/" class="hover:underline">IPTVTools</a> &copy; 2025 🛡️ Protected by&nbsp;
+    <a class="font-semibold hover:opacity-80" href="https://www.cloudflare.com/" target="_blank" rel="noopener">Cloudflare</a>&nbsp;
+    and&nbsp;
+    <a class="font-semibold hover:opacity-80" href="https://www.imperva.com/" target="_blank" rel="noopener">Imperva</a>
+</div>
+
+
+                <div class="mb-6 lg:mb-0 lg:ml-auto flex flex-wrap items-center text-gray-400">
+                    <button data-theme-toggle class="mb-3 mr-5 last:mr-0 inline-flex flex-shrink-0" title="Change theme" aria-label="Change theme">
+                        <svg 
+   class="dark:hidden w-5 h-5 lg:w-5 lg:h-5 hover:opacity-80" 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 24 24" 
+  width="24" 
+  height="24" 
+  fill="none" 
+  stroke="currentColor"
+  stroke-width="2" 
+  focusable="false"
+  aria-hidden="true"      
+>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+</svg>
+                        <svg 
+   class="hidden dark:inline w-5 h-5 lg:w-4 lg:h-4 relative -top-px hover:opacity-80"  
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 24 24" 
+  width="24" 
+  height="24"     
+  fill="none" 
+  stroke="currentColor" 
+  stroke-width="2"
+  stroke-linecap="round" 
+  stroke-linejoin="round"
+  focusable="false"
+  aria-hidden="true"        
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+  <path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2"></path>
+</svg>                    </button>                    
+                    
+
+                <a data-social-link class="mb-3 mr-5 last:mr-0" href="https://github.com/IPTVTools-io" title="Github" aria-label="Github" target="_blank">
+                    <svg 
+     class="w-5 h-5 lg:w-4 lg:h-4 hover:opacity-80" 
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24" 
+    fill="currentColor"
+    focusable="false"
+    aria-hidden="true"     
+>
+    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+</svg>                </a>
+                <a data-social-link class="mb-3 mr-5 last:mr-0" href="https://t.me/iptvtoolsio" title="Telegram" aria-label="Telegram" target="_blank">
+                    <svg 
+     class="w-5 h-5 lg:w-4 lg:h-4 hover:opacity-80" 
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24" 
+    width="24" 
+    height="24"
+    fill="currentColor" 
+    focusable="false"
+    aria-hidden="true"      
+>
+    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+</svg>                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>        </div>
+
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true" data-error-msg="The image could not be loaded.">
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <!-- Preloader -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader" aria-label="Loading">
+                    <svg 
+     class="m-1.5 text-white opacity-100 w-8 h-8" 
+    version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    x="0px"
+    y="0px" 
+    width="40px" 
+    height="40px" 
+    viewBox="0 0 40 40" 
+    enable-background="new 0 0 40 40" 
+    xml:space="preserve"
+    focusable="false"
+    aria-hidden="true"       
+>
+    <path opacity="0.2" fill="currentColor" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" />
+    <path fill="currentColor" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+C22.32,8.481,24.301,9.057,26.013,10.047z">
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20"
+            dur="0.5s" repeatCount="indefinite" />
+    </path>
+</svg>                </div>                
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+            
+
+        <div id="sx-lazy-script" data-src="../../assets/built/lazy.mina0ac.js?v=11ef435d92"></div>
+
+        
+    <script src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="7232d53fadb2f971adc91628-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"b1dc06c86adf4868954a12e392b5c735","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from iptvtools.io/xuidocs/add-bouquet-category-and-live/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Jul 2025 21:24:08 GMT -->
+</html>
