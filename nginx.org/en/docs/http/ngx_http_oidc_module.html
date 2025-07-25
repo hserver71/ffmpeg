@@ -1,0 +1,560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Module ngx_http_oidc_module</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="../../../css/style_en.css"></head><body><div id="banner"><div id="banner-content">
+
+The NGINX Team wants to hear from you.
+<a href="https://survey.developernation.net/name/nginx2/branch/main">Take the 2025 NGINX User Survey</a>.
+
+</div></div><div id="main"><div id="menu"><input class="side-menu" type="checkbox" id="side-menu"><label class="hamb" for="side-menu"><span class="hamb-line"></span></label><nav class="nav"><h1><a href="https://nginx.org/"><img src="../../../img/nginx_logo.png" alt="NGINX" class="lightimage" style="display: block; height: auto;"><div class="darkimageWrapper" style="mso-hide: all; display: none"><img src="../../../img/nginx_logo_dark.png" alt="NGINX" class="darkimage" style="display: none;"></div></a></h1><div><ul class="mobilemenu"><li>english<br></li><li><a class="notrans">русский</a></li><li><br></li><li><a href="https://nginx.org/news.html">news</a></li><li><a href="https://nginx.org/en/">about</a></li><li><a href="https://nginx.org/en/download.html">download</a></li><li><a href="https://nginx.org/en/security_advisories.html">security</a></li><li><a href="../index.html">documentation</a></li><li><a href="../faq.html">faq</a></li><li><a href="https://nginx.org/en/books.html">books</a></li><li><a href="https://nginx.org/en/community.html">community</a></li><li><a href="https://nginx.org/en/enterprise.html">enterprise</a></li><li><br></li><li><a href="https://community.nginx.org">community forum (new)</a></li><li><a href="https://x.com/nginxorg">x.com</a></li><li><a href="https://blog.nginx.org/">blog</a></li><li><br></li><li><a href="https://unit.nginx.org/">unit</a></li><li><a href="../njs/index.html">njs</a></li></ul></div></nav></div><div id="content"><h2>Module ngx_http_oidc_module</h2><table width="100%"><tr><td align="left"><a href="ngx_http_oidc_module.html#example">Example Configuration</a><br><a href="ngx_http_oidc_module.html#directives">Directives</a><br>     <a href="ngx_http_oidc_module.html#oidc_provider">oidc_provider</a><br>     <a href="ngx_http_oidc_module.html#auth_oidc">auth_oidc</a><br>     <a href="ngx_http_oidc_module.html#issuer">issuer</a><br>     <a href="ngx_http_oidc_module.html#client_id">client_id</a><br>     <a href="ngx_http_oidc_module.html#client_secret">client_secret</a><br>     <a href="ngx_http_oidc_module.html#config_url">config_url</a><br>     <a href="ngx_http_oidc_module.html#cookie_name">cookie_name</a><br>     <a href="ngx_http_oidc_module.html#extra_auth_args">extra_auth_args</a><br>     <a href="ngx_http_oidc_module.html#redirect_uri">redirect_uri</a><br>     <a href="ngx_http_oidc_module.html#scope">scope</a><br>     <a href="ngx_http_oidc_module.html#session_store">session_store</a><br>     <a href="ngx_http_oidc_module.html#session_timeout">session_timeout</a><br>     <a href="ngx_http_oidc_module.html#ssl_crl">ssl_crl</a><br>     <a href="ngx_http_oidc_module.html#ssl_trusted_certificate">ssl_trusted_certificate</a><br><a href="ngx_http_oidc_module.html#variables">Embedded Variables</a><br></td></tr></table>
+
+<a name="summary"></a><p>
+The <code>ngx_http_oidc_module</code> module (1.27.4)
+implements authentication as a Relying Party in OpenID Connect using the
+<a href="https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth">
+Authorization Code Flow</a>.
+</p><p>
+The module expects the OpenID Provider's configuration to be available via
+<a href="https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig">
+metadata</a> and requires dynamic
+<a href="ngx_http_core_module.html#resolver">resolver</a>.
+</p><p>
+The module can be combined with other access modules
+via the <a href="ngx_http_core_module.html#satisfy">satisfy</a> directive.
+Note that the module may still block requests even with
+<code>satisfy any;</code>
+as an OpenID Provider might not redirect the user back to nginx.
+</p><p>
+</p> <blockquote class="note">
+This module is available as part of our
+<a href="https://www.f5.com/products/nginx">commercial subscription</a>.
+</blockquote><p> 
+</p>
+
+
+<a name="example"></a><center><h4>Example Configuration</h4></center><p>
+</p> <blockquote class="example"><pre>
+http {
+    resolver 10.0.0.1;
+
+    oidc_provider my_idp {
+        issuer        "https://provider.domain";
+        client_id     "unique_id";
+        client_secret "unique_secret";
+    }
+
+    server {
+        location / {
+            auth_oidc my_idp;
+
+            proxy_set_header username $oidc_claim_sub;
+            proxy_pass       http://backend;
+        }
+    }
+}
+</pre></blockquote><p> 
+The example assumes that the
+“<code>https://&lt;nginx-host&gt;/oidc_callback</code>”
+Redirection URI is configured on the OpenID Provider's side.
+The path can be customized with the <a href="ngx_http_oidc_module.html#redirect_uri">redirect_uri</a> directive.
+</p>
+
+
+<a name="directives"></a><center><h4>Directives</h4></center><a name="oidc_provider"></a><div class="directive"><table cellspacing="0">
+                <tr>
+                <th>
+            Syntax:
+                </th>
+                <td>
+            <code><strong>oidc_provider</strong> <code><i>name</i></code> { ... }</code><br>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Default:
+                </th>
+                <td>
+            
+            —
+        
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Context:
+                </th>
+                <td>
+            <code>http</code><br>
+                </td>
+                </tr>
+            </table></div><p>
+Defines an OpenID Provider for use with the <a href="ngx_http_oidc_module.html#auth_oidc">auth_oidc</a> directive.
+</p><a name="auth_oidc"></a><div class="directive"><table cellspacing="0">
+                <tr>
+                <th>
+            Syntax:
+                </th>
+                <td>
+            <code><strong>auth_oidc</strong> <code><i>name</i></code> | <code>off</code>;</code><br>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Default:
+                </th>
+                <td>
+            <pre>auth_oidc off;</pre>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Context:
+                </th>
+                <td>
+            <code>http</code>, <code>server</code>, <code>location</code><br>
+                </td>
+                </tr>
+            </table></div><p>
+Enables end user authentication with the
+<a href="ngx_http_oidc_module.html#oidc_provider">specified</a> OpenID Provider.
+</p><p>
+The special value <code>off</code> cancels the effect
+of the <code>auth_oidc</code> directive
+inherited from the previous configuration level.
+</p><a name="issuer"></a><div class="directive"><table cellspacing="0">
+                <tr>
+                <th>
+            Syntax:
+                </th>
+                <td>
+            <code><strong>issuer</strong> <code><i>URL</i></code>;</code><br>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Default:
+                </th>
+                <td>
+            
+            —
+        
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Context:
+                </th>
+                <td>
+            <code>oidc_provider</code><br>
+                </td>
+                </tr>
+            </table></div><p>
+Sets the Issuer Identifier URL of the OpenID Provider;
+required directive.
+The URL must exactly match the value of “<code>issuer</code>”
+in the OpenID Provider metadata
+and requires the “<code>https</code>” scheme.
+</p><a name="client_id"></a><div class="directive"><table cellspacing="0">
+                <tr>
+                <th>
+            Syntax:
+                </th>
+                <td>
+            <code><strong>client_id</strong> <code><i>string</i></code>;</code><br>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Default:
+                </th>
+                <td>
+            
+            —
+        
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Context:
+                </th>
+                <td>
+            <code>oidc_provider</code><br>
+                </td>
+                </tr>
+            </table></div><p>
+Specifies the client ID of the Relying Party;
+required directive.
+</p><a name="client_secret"></a><div class="directive"><table cellspacing="0">
+                <tr>
+                <th>
+            Syntax:
+                </th>
+                <td>
+            <code><strong>client_secret</strong> <code><i>string</i></code>;</code><br>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Default:
+                </th>
+                <td>
+            
+            —
+        
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Context:
+                </th>
+                <td>
+            <code>oidc_provider</code><br>
+                </td>
+                </tr>
+            </table></div><p>
+Specifies a secret value
+used to authenticate the Relying Party with the OpenID Provider.
+</p><a name="config_url"></a><div class="directive"><table cellspacing="0">
+                <tr>
+                <th>
+            Syntax:
+                </th>
+                <td>
+            <code><strong>config_url</strong> <code><i>URL</i></code>;</code><br>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Default:
+                </th>
+                <td>
+            <pre>config_url &lt;issuer&gt;/.well-known/openid-configuration;</pre>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Context:
+                </th>
+                <td>
+            <code>oidc_provider</code><br>
+                </td>
+                </tr>
+            </table></div><p>
+Sets a custom URL to retrieve the OpenID Provider metadata.
+</p><a name="cookie_name"></a><div class="directive"><table cellspacing="0">
+                <tr>
+                <th>
+            Syntax:
+                </th>
+                <td>
+            <code><strong>cookie_name</strong> <code><i>name</i></code>;</code><br>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Default:
+                </th>
+                <td>
+            <pre>cookie_name NGX_OIDC_SESSION;</pre>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Context:
+                </th>
+                <td>
+            <code>oidc_provider</code><br>
+                </td>
+                </tr>
+            </table></div><p>
+Sets the name of a session cookie.
+</p><a name="extra_auth_args"></a><div class="directive"><table cellspacing="0">
+                <tr>
+                <th>
+            Syntax:
+                </th>
+                <td>
+            <code><strong>extra_auth_args</strong> <code><i>string</i></code>;</code><br>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Default:
+                </th>
+                <td>
+            
+            —
+        
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Context:
+                </th>
+                <td>
+            <code>oidc_provider</code><br>
+                </td>
+                </tr>
+            </table></div><p>
+Sets additional query arguments for the
+<a href="https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest">authentication
+request</a> URL.
+</p> <blockquote class="example"><pre>
+extra_auth_args "display=page&amp;prompt=login";
+</pre></blockquote><p> 
+</p><a name="redirect_uri"></a><div class="directive"><table cellspacing="0">
+                <tr>
+                <th>
+            Syntax:
+                </th>
+                <td>
+            <code><strong>redirect_uri</strong> <code><i>uri</i></code>;</code><br>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Default:
+                </th>
+                <td>
+            <pre>redirect_uri /oidc_callback;</pre>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Context:
+                </th>
+                <td>
+            <code>oidc_provider</code><br>
+                </td>
+                </tr>
+            </table></div><p>
+Defines the Redirection URI path for post-authentication redirects
+expected by the module from the OpenID Provider.
+The <code><i>uri</i></code> must match the configuration on the Provider's side.
+</p><a name="scope"></a><div class="directive"><table cellspacing="0">
+                <tr>
+                <th>
+            Syntax:
+                </th>
+                <td>
+            <code><strong>scope</strong> <code><i>scope</i></code> ...;</code><br>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Default:
+                </th>
+                <td>
+            <pre>scope openid;</pre>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Context:
+                </th>
+                <td>
+            <code>oidc_provider</code><br>
+                </td>
+                </tr>
+            </table></div><p>
+Sets requested scopes.
+The <code>openid</code> scope is always required by OIDC.
+</p><a name="session_store"></a><div class="directive"><table cellspacing="0">
+                <tr>
+                <th>
+            Syntax:
+                </th>
+                <td>
+            <code><strong>session_store</strong> <code><i>name</i></code>;</code><br>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Default:
+                </th>
+                <td>
+            
+            —
+        
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Context:
+                </th>
+                <td>
+            <code>oidc_provider</code><br>
+                </td>
+                </tr>
+            </table></div><p>
+Specifies a custom
+<a href="ngx_http_keyval_module.html#keyval_zone">key-value database</a>
+that stores session data.
+By default, an 8-megabyte key-value database named 
+<code>oidc_default_store_&lt;provider name&gt;</code>
+is created automatically.
+</p> <blockquote class="note">
+A separate key-value database should be configured for each Provider
+to prevent session reuse across providers.
+</blockquote><p> 
+</p><a name="session_timeout"></a><div class="directive"><table cellspacing="0">
+                <tr>
+                <th>
+            Syntax:
+                </th>
+                <td>
+            <code><strong>session_timeout</strong> <code><i>time</i></code>;</code><br>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Default:
+                </th>
+                <td>
+            <pre>session_timeout 8h;</pre>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Context:
+                </th>
+                <td>
+            <code>oidc_provider</code><br>
+                </td>
+                </tr>
+            </table></div><p>
+Sets a timeout after which the session is deleted, unless it was
+<a href="https://openid.net/specs/openid-connect-core-1_0.html#RefreshTokens">refreshed</a>.
+</p><a name="ssl_crl"></a><div class="directive"><table cellspacing="0">
+                <tr>
+                <th>
+            Syntax:
+                </th>
+                <td>
+            <code><strong>ssl_crl</strong> <code><i>file</i></code>;</code><br>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Default:
+                </th>
+                <td>
+            
+            —
+        
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Context:
+                </th>
+                <td>
+            <code>oidc_provider</code><br>
+                </td>
+                </tr>
+            </table></div><p>
+Specifies a <code><i>file</i></code> with revoked certificates (CRL)
+in the PEM format used to verify
+the certificates of the OpenID Provider endpoints.
+</p><a name="ssl_trusted_certificate"></a><div class="directive"><table cellspacing="0">
+                <tr>
+                <th>
+            Syntax:
+                </th>
+                <td>
+            <code><strong>ssl_trusted_certificate</strong> <code><i>file</i></code>;</code><br>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Default:
+                </th>
+                <td>
+            <pre>ssl_trusted_certificate system CA bundle;</pre>
+                </td>
+                </tr>
+            
+                <tr>
+                <th>
+            Context:
+                </th>
+                <td>
+            <code>oidc_provider</code><br>
+                </td>
+                </tr>
+            </table></div><p>
+Specifies a <code><i>file</i></code> with trusted CA certificates in the PEM format
+used to verify
+the certificates of the OpenID Provider endpoints.
+</p>
+
+
+<a name="variables"></a><center><h4>Embedded Variables</h4></center><p>
+The <code>ngx_http_oidc_module</code> module supports embedded variables:
+</p><p>
+</p> <dl class="compact">
+
+<dt id="var_oidc_id_token"><code>$oidc_id_token</code></dt>
+<dd>
+ID token
+</dd>
+
+<dt id="var_oidc_access_token"><code>$oidc_access_token</code></dt>
+<dd>
+access token
+</dd>
+
+<dt id="var_oidc_claim_"><code>$oidc_claim_</code><code><i>name</i></code></dt>
+<dd>
+top-level ID token claim
+<p>
+Nested claims can be fetched with the
+<a href="ngx_http_auth_jwt_module.html">auth_jwt</a> module:
+</p> <blockquote class="example"><pre>
+http {
+    auth_jwt_claim_set $postal_code address postal_code;
+
+    server {
+        location / {
+            auth_oidc my_idp;
+            auth_jwt  off token=$oidc_id_token;
+
+            proxy_set_header x-postal_code $postal_code;
+            proxy_pass       http://backend;
+        }
+    }
+}
+</pre></blockquote><p> 
+</p>
+
+</dd>
+
+</dl><p> 
+</p>
+
+</div></div></body></html>
